@@ -1,0 +1,26 @@
+.btnDefault {
+    color: #2C2A36;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 15px;
+    background: #6EE4FF;
+    padding: 0 27px;
+}
+
+.btnDefault:hover {
+    background: #488696;
+}
+
+.btnDefault:active {
+    background: #2C2A36;
+    color: #6EE4FF;
+}
+
+.btnDefault:disabled {
+    background: #457686;
+    color: #2C2A36;
+    cursor: auto;
+}

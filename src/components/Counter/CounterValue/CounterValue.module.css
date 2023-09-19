@@ -1,0 +1,25 @@
+.value{
+    padding: 22px 176px;
+    color: #2A2C36;
+    font-family: Inter;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: #6EE4FF;
+    display: block;
+}
+
+.error {
+    padding: 22px 176px;
+    color: #DA0046;
+    font-family: Inter;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: #6EE4FF;
+    display: block;
+}
