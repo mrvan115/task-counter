@@ -1,22 +1,30 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import s from './Counter.module.css'
-import { CounterValue } from './CounterValue/CounterValue'
-import { CounterButtons } from './CounterButtons/CounterButtons'
+import { Value } from './Value'
+import Buttons from './Buttons'
 
 type CounterPropsType = {
-	value: number
+	value: number | string
+	incBtn: string
+	resetBtn: string
 	increaseValue: () => void
 	resetValue: () => void
+	startValue: number
+	maxValue: number
 }
 
 export const Counter: FC<CounterPropsType> = (props) => {
 	return (
 		<div className={s.counter}>
-			<CounterValue value={props.value} />
-			<CounterButtons
+			<Value value={props.value} maxValue={props.maxValue} />
+			<Buttons
+				incBtn={props.incBtn}
+				resetBtn={props.resetBtn}
 				increaseValue={props.increaseValue}
 				resetValue={props.resetValue}
 				value={props.value}
+				startValue={props.startValue}
+				maxValue={props.maxValue}
 			/>
 		</div>
 	)
